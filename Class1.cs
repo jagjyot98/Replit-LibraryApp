@@ -3,7 +3,6 @@ using System.Data;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 
-
     class Book
     {
         public string title;
