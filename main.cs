@@ -6,8 +6,11 @@ class Book{
 	public string author;
 	public int BookID;
 
+	private static Random random = new Random();
+
+	// By creating a single static instance of Random in the Book class, you ensure that the random BookID generation is more reliable.
+
 	public void addNewBoook(){
-		Random random = new Random();
 		BookID = new Random().Next(100,500);
 		Console.WriteLine("Enter the title of the book");
 		title = Console.ReadLine();
